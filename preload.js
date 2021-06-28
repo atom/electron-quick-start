@@ -18,7 +18,6 @@ const test = {
 // - has major, minor, and patch numbers
 // - the numbers are non-negative
 try {
-  const ver = process.versions.electron
   const tokens = process.versions.electron.split('.', 3)
   test.assert(tokens.length === 3)
   for (const token of tokens) {
